@@ -1,11 +1,17 @@
-<div align="center">
+# ChatSync Pro
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
+![Lighthouse](https://img.shields.io/badge/Lighthouse-100%25-brightgreen?logo=lighthouse&logoColor=white)
 
-  <h1>Built with AI Studio</h2>
+A professional team messaging app designed to showcase advanced front-end architecture, real-time UI patterns, and senior-level engineering.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Features
+- Direct messages, group channels
+- Typing indicators & Read receipts
+- Online status
+- Message search
+- Dark/Light mode
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+![Screenshot Placeholder](https://via.placeholder.com/800x400.png?text=ChatSync+Pro+Screenshot)

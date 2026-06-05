@@ -1,0 +1,6 @@
+{
+  "name": "ChatSync Pro",
+  "description": "A professional team messaging app demonstrating advanced front-end architecture and simulated real-time UI patterns.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
