@@ -20,6 +20,7 @@ export interface Message {
   status: 'sending' | 'sent' | 'read';
   reactions?: Record<string, string[]>;
   parentMessageId?: string; // Add support for threads
+  attachment?: string;
 }
 
 export interface Channel {

@@ -164,7 +164,7 @@ function chatReducer(state: ChatState, action: Action): ChatState {
 interface ChatContextProps {
   state: ChatState;
   dispatch: React.Dispatch<Action>;
-  sendMessage: (text: string, parentMessageId?: string) => void;
+  sendMessage: (text: string, parentMessageId?: string, attachment?: string) => void;
 }
 
 const ChatContext = createContext<ChatContextProps | undefined>(undefined);
@@ -198,7 +198,7 @@ export function ChatProvider({ children }: { children: ReactNode }) {
      return () => clearInterval(interval);
   }, []);
 
-  const sendMessage = (text: string, parentMessageId?: string) => {
+  const sendMessage = (text: string, parentMessageId?: string, attachment?: string) => {
     if (!state.currentUser) return;
 
     const newMessage: Message = {
@@ -210,6 +210,7 @@ export function ChatProvider({ children }: { children: ReactNode }) {
       timestamp: new Date().toISOString(),
       status: 'sending',
       parentMessageId,
+      attachment,
     };
 
     dispatch({ type: 'ADD_MESSAGE', payload: newMessage });
@@ -250,6 +251,12 @@ export function ChatProvider({ children }: { children: ReactNode }) {
                 parentMessageId,
               };
               dispatch({ type: 'ADD_MESSAGE', payload: replyMessage });
+              
+              try {
+                // Play a simple notification sound
+                const audio = new Audio('https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3');
+                audio.play().catch(e => console.warn('Audio play failed', e));
+              } catch(e) {}
            }, 2000); // typing for 2 seconds
          }
       }, Math.random() * 4000 + 4000); // reply after 4-8 seconds
