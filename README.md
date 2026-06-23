@@ -36,87 +36,11 @@ https://chatsync-pro.vercel.app/
 
 ## Project Structure
 
-chatsync-pro/
 
-├── src/
-
-│   ├── app/                         # Next.js App Router
-
-│   │   ├── layout.tsx               # Root layout
-
-│   │   ├── page.tsx                 # Home page
-
-│   │   └── globals.css              # Global styles (Tailwind)
-
-│   │
-
-│   ├── components/
-
-│   │   ├── ActivityChart.tsx        # Activity visualization component
-
-│   │   ├── ChatArea.tsx             # Main chat display area
-
-│   │   ├── CommandPalette.tsx       # Command palette interface
-
-│   │   ├── Login.tsx                # Login/authentication component
-
-│   │   ├── MessageInput.tsx         # Message input field component
-
-│   │   ├── MessageItem.tsx          # Individual message display component
-
-│   │   ├── MessageList.tsx          # Message list container
-
-│   │   ├── ProfilePanel.tsx         # User profile panel
-
-│   │   ├── Settings.tsx             # Settings/configuration component
-
-│   │   ├── Sidebar.tsx              # Navigation sidebar
-
-│   │   └── ThreadPanel.tsx          # Thread view panel
-
-│   │
-│   ├── context/
-│   │   └── ChatContext.tsx          # Global chat state management
-
-│   │
-│   ├── lib/
-│   │   ├── mockData.ts              # Mock data for development/testing
-
-│   │   └── utils.ts                 # Utility functions
-
-│   │
-│   └── types.ts                     # TypeScript type definitions
-
-│
-├── public/                          # Static assets
-
-│   └── (images, icons, etc.)
-
-│
-├── Configuration Files
-│   ├── package.json
-
-│   ├── package-lock.json
-
-│   ├── tsconfig.json
-
-│   ├── next.config.mjs              # Next.js configuration
-
-│   ├── tailwind.config.ts           # Tailwind CSS configuration
-
-│   ├── postcss.config.mjs           # PostCSS configuration
-
-│   ├── .env.example
-
-│   ├── .gitignore
-
-│   └── metadata.json
-
-```
 
 📸 Screenshot
 
-https://placehold.co/800x500?text=ChatSync+Pro
+![Chat Sync-Pro](Copilot_20260624_022505.png)
 
 🚦 Getting Started
 
